@@ -5,4 +5,4 @@ def base_view(request):
         'name': 'Дмитрий',
         'info': 'Hello world!'
     }
-    return render(request, 'index.html', context=context)
+    return render(request, 'base.html', context=context)
