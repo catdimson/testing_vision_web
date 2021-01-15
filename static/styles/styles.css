@@ -73,6 +73,15 @@ h4 {
 .color--light-blue {
   color: #70c2b9;
 }
+.voice-area--width-90 {
+  width: 90%;
+}
+.voice-area--width-70 {
+  width: 70%;
+}
+.voice-area--width-65 {
+  width: 65%;
+}
 .flex-end-center {
   display: flex;
   justify-content: flex-end;
@@ -179,4 +188,60 @@ h4 {
 .real-school .btn--sand {
   margin-bottom: 70px;
 }
-/*-- footer --*/
+.finance-for-children {
+  background: #70c2b9;
+  padding-top: 80px;
+  border-top: 2px solid #4b3584;
+  padding-bottom: 30px;
+}
+.finance-for-children h2 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.finance-for-children h3 {
+  margin-left: -30px;
+  color: #2f2f2f;
+  margin-bottom: 30px;
+}
+.finance-for-children__left-col {
+  /*img {
+    width: 110%;
+  }*/
+}
+.voice-area {
+  background: #ffffff;
+  padding: 15px 30px;
+  border-radius: 20px 20px 20px 0;
+  font-weight: 500;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+.voice-area::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -40px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background: #70c2b9;
+  border-bottom-right-radius: 20px;
+  z-index: 2;
+}
+.voice-area::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: -40px;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background: white;
+  z-index: 1;
+}
+.voice-area .text {
+  margin-bottom: 0;
+  color: #4b3584;
+}

@@ -66,11 +66,21 @@ h4 {
   color: @COLOR_LIGHT_BLACK;
 }
 
+
 .color--purple {
   color: @COLOR_PURPLE;
 }
 .color--light-blue {
   color: @COLOR_LIGHT_BLUE;
+}
+.voice-area--width-90 {
+  width: 90%;
+}
+.voice-area--width-70 {
+  width: 70%;
+}
+.voice-area--width-65 {
+  width: 65%;
 }
 
 .flex-end-center {
@@ -176,6 +186,7 @@ h4 {
 }
 
 /*-- main --*/
+// block 1
 .real-school {
   .text {
     margin-top: 30px;
@@ -189,6 +200,69 @@ h4 {
   }
 }
 
-/*-- footer --*/
+// block 2
+.finance-for-children {
+  background: @COLOR_LIGHT_BLUE;
+  padding-top: 80px;
+  border-top: 2px solid @COLOR_PURPLE;
+  padding-bottom: 30px;
+
+  h2 {
+    color: @COLOR_WHITE;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  h3 {
+    margin-left: -30px;
+    color: @COLOR_LIGHT_BLACK;
+    margin-bottom: 30px;
+  }
+}
+.finance-for-children__left-col {
+  /*img {
+    width: 110%;
+  }*/
+}
+.voice-area {
+  background: @COLOR_WHITE;
+  padding: 15px 30px;
+  border-radius: @RADIUS_BIG @RADIUS_BIG @RADIUS_BIG 0;
+  font-weight: 500;
+  position: relative;
+  margin-left: auto;
+  margin-bottom: 20px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -40px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background: @COLOR_LIGHT_BLUE;
+    border-bottom-right-radius: 20px;
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -40px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background: white;
+    z-index: 1;
+  }
+
+  .text {
+    margin-bottom: 0;
+    color: @COLOR_PURPLE;
+  }
+}
+
 
 
