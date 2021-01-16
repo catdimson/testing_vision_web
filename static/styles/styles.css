@@ -141,7 +141,7 @@ h4 {
   width: auto;
   padding: 7px 35px;
 }
-/*-- header --*/
+/*------ header ------*/
 .logo img {
   width: 100%;
 }
@@ -188,8 +188,9 @@ h4 {
 }
 .header {
   padding: 15px 0;
+  margin-bottom: 40px;
 }
-/*-- main --*/
+/*------ main ------*/
 .real-school .text {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -325,6 +326,21 @@ h4 {
   width: 500px;
   margin-left: auto;
 }
+.about-course {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.about-course h3 {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.about-course .btn {
+  font-weight: 500;
+}
+.courses-are h2 {
+  margin-bottom: 30px;
+  font-weight: 700;
+}
 .courses-are__section {
   background: #f7af4d;
   border-top: 3px solid #2f2f2f;
@@ -347,17 +363,13 @@ h4 {
   line-height: 1.25;
   margin-right: 25px;
 }
-@media (min-width: 576px) {
-  .col-50 {
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
+/*------ media ------*/
+@media (min-width: 1200px) {
   .motivation .left-col .col-50 {
-    width: 305px;
+    width: 515px;
   }
   .motivation .right-col .col-50 {
-    width: 360px;
+    width: 570px;
   }
 }
 @media (min-width: 992px) {
@@ -368,11 +380,245 @@ h4 {
     width: 480px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    margin-bottom: 10px;
+  }
+  .header .btn {
+    font-size: 13px;
+  }
+  .btn--light-blue {
+    padding: 5px 13px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  .real-school .text {
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  .real-school__right-col {
+    align-self: flex-start !important;
+  }
+  .btn {
+    font-size: 15px;
+  }
+  .real-school .btn--sand {
+    margin-bottom: 40px;
+  }
+  .finance-for-children {
+    padding-top: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .finance-for-children .finance-for-children__right-col > h3 {
+    margin-left: 0;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .voice-area {
+    margin-bottom: 10px;
+    margin-left: inherit;
+  }
+  .finance-for-children h3 {
+    margin-bottom: 10px;
+  }
+  .for-whom {
+    margin: 40px 0 0;
+  }
+  .for-whom h2 {
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  .pluses .text {
+    margin-bottom: 40px;
+  }
+  .pluses__img {
+    height: 250px;
+  }
+  .list {
+    font-size: 15px;
+  }
+  .motivation__text {
+    padding: 30px 30px 20px;
+  }
+  .motivation__img {
+    width: 85%;
+  }
+  .motivation .left-col {
+    margin-top: 0;
+  }
+  .motivation .right-col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .about-course {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .timer__hours {
+    font-size: 50px;
+  }
+  .timer__text {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
   .motivation .left-col .col-50 {
-    width: 515px;
+    width: 305px;
   }
   .motivation .right-col .col-50 {
-    width: 570px;
+    width: 360px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 30px 0;
+    margin-bottom: 0;
+  }
+  .logo {
+    width: 100px;
+    margin: 0 auto 20px;
+  }
+  .menu__list {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .menu__item {
+    margin-bottom: 5px;
+  }
+  .flex-end-center {
+    justify-content: center;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  .real-school {
+    padding-top: 20px;
+    border-top: 2px solid #4b3584;
+  }
+  .real-school .text {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  .btn {
+    font-size: 15px;
+  }
+  .real-school .btn--sand {
+    margin-bottom: 35px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .finance-for-children {
+    padding-top: 30px;
+  }
+  .finance-for-children img {
+    width: 75%;
+  }
+  .finance-for-children .finance-for-children__right-col > h3 {
+    margin-left: 0;
+  }
+  h3 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .voice-area {
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .finance-for-children {
+    padding-bottom: 1px;
+  }
+  .for-whom {
+    margin: 30px 0 10px;
+  }
+  .for-whom h2 {
+    margin-bottom: 15px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  .pluses__img {
+    height: 220px;
+    margin-bottom: 15px;
+  }
+  .pluses {
+    margin-bottom: 25px;
+  }
+  .motivation .left-col {
+    margin-top: 0;
+    margin-right: 15px;
+    width: auto;
+  }
+  .motivation .right-col {
+    display: none;
+  }
+  .motivation .motivation__decor-enging {
+    padding: 15px 15px 15px 0;
+  }
+  .about-course {
+    margin: 30px 0;
+  }
+  .about-course h3 {
+    margin-bottom: 15px;
+  }
+  .timers {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .timer__hours {
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+  .timer__text {
+    font-size: 20px;
+  }
+  .timer {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .timers {
+    padding-bottom: 30px;
+  }
+  .timer {
+    display: flex;
+    align-items: center;
+  }
+  .timer__hours {
+    min-width: 70px;
+    text-align: right;
+    margin-right: 15px;
+  }
+  .timer__text {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 575px) {
+  .pluses__text {
+    max-width: 400px;
+  }
+}
+@media (min-width: 576px) {
+  .col-50 {
+    width: 100%;
   }
 }
