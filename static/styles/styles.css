@@ -39,7 +39,8 @@ h3,
 h4,
 button,
 p,
-a {
+a,
+.text {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 h1 {
@@ -81,6 +82,9 @@ h4 {
 }
 .voice-area--width-65 {
   width: 65%;
+}
+.fw-7 {
+  font-weight: 700;
 }
 .flex-end-center {
   display: flex;
@@ -200,9 +204,11 @@ h4 {
   margin-bottom: 25px;
 }
 .finance-for-children h3 {
-  margin-left: -30px;
   color: #2f2f2f;
   margin-bottom: 30px;
+}
+.finance-for-children .finance-for-children__right-col > h3 {
+  margin-left: -30px;
 }
 .finance-for-children__left-col {
   /*img {
@@ -244,4 +250,22 @@ h4 {
 .voice-area .text {
   margin-bottom: 0;
   color: #4b3584;
+}
+.for-whom {
+  margin: 80px 0 50px;
+}
+.for-whom h2 {
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+.for-whom h4 {
+  margin-bottom: 40px;
+}
+.pluses__img {
+  height: 180px;
+  margin-bottom: 30px;
+  margin-right: 35px;
+}
+.pluses__img img {
+  height: 100%;
 }
