@@ -40,7 +40,10 @@ h4,
 button,
 p,
 a,
-.text {
+.text,
+ul,
+li,
+ol {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 h1 {
@@ -64,6 +67,11 @@ h4 {
   font-size: 18px;
   line-height: 1.3;
   font-weight: 500;
+}
+.list {
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 700;
 }
 .p {
   color: #2f2f2f;
@@ -252,7 +260,7 @@ h4 {
   color: #4b3584;
 }
 .for-whom {
-  margin: 80px 0 50px;
+  margin: 80px 0 70px;
 }
 .for-whom h2 {
   font-weight: 700;
@@ -268,4 +276,103 @@ h4 {
 }
 .pluses__img img {
   height: 100%;
+}
+.motivation {
+  display: flex;
+}
+.motivation .left-col {
+  width: 50%;
+  margin-top: 50px;
+}
+.motivation .left-col .col-50 {
+  padding-left: 15px;
+  margin-left: auto;
+}
+.motivation .motivation__decor-enging {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 25px 25px 25px 0;
+  /*border: @BORDER_WIDTH dashed @COLOR_LIGHT_BLACK;
+    border-left: none;*/
+  background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: purple; stroke-width: 4; stroke-dasharray: 20 20'/></svg>");
+  margin-left: -4px;
+}
+.motivation .right-col {
+  width: 50%;
+}
+.motivation .right-col .col-50 {
+  padding-right: 15px;
+  margin-right: auto;
+}
+.motivation .text {
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+.motivation__text {
+  border: 3px solid #2b2150;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-left: none;
+  background: #70c2b9;
+  padding: 50px 30px 40px;
+}
+.motivation__text .list {
+  list-style: none;
+  line-height: 1.4;
+  padding-left: 0;
+}
+.motivation__img {
+  width: 500px;
+  margin-left: auto;
+}
+.courses-are__section {
+  background: #f7af4d;
+  border-top: 3px solid #2f2f2f;
+  border-bottom: 3px solid #2f2f2f;
+}
+.timers {
+  display: flex;
+  padding-top: 40px;
+}
+.timer {
+  margin-bottom: 40px;
+}
+.timer__hours {
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 700;
+}
+.timer__text {
+  font-size: 25px;
+  line-height: 1.25;
+  margin-right: 25px;
+}
+@media (min-width: 576px) {
+  .col-50 {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .motivation .left-col .col-50 {
+    width: 305px;
+  }
+  .motivation .right-col .col-50 {
+    width: 360px;
+  }
+}
+@media (min-width: 992px) {
+  .motivation .left-col .col-50 {
+    width: 425px;
+  }
+  .motivation .right-col .col-50 {
+    width: 480px;
+  }
+}
+@media (min-width: 1200px) {
+  .motivation .left-col .col-50 {
+    width: 515px;
+  }
+  .motivation .right-col .col-50 {
+    width: 570px;
+  }
 }
