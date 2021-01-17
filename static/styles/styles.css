@@ -239,11 +239,17 @@ input {
 .real-school .btn--sand {
   margin-bottom: 70px;
 }
+.real-school__right-col {
+  position: relative;
+  z-index: 1;
+}
 .finance-for-children {
   background: #70c2b9;
   padding-top: 80px;
   border-top: 2px solid #4b3584;
   padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
 }
 .finance-for-children h2 {
   color: #ffffff;
@@ -344,7 +350,6 @@ input {
   margin-right: auto;
 }
 .motivation .text {
-  margin-bottom: 30px;
   line-height: 1.4;
 }
 .motivation__text {
@@ -355,10 +360,19 @@ input {
   background: #70c2b9;
   padding: 50px 30px 40px;
 }
-.motivation__text .list {
+.motivation__text ul {
   list-style: none;
   line-height: 1.4;
-  padding-left: 0;
+  padding-left: 15px;
+}
+.motivation__text ul li {
+  position: relative;
+}
+.motivation__text ul li:before {
+  content: '-';
+  position: absolute;
+  left: -15px;
+  font-weight: 700;
 }
 .motivation__img {
   width: 500px;
@@ -539,7 +553,7 @@ input {
   .pluses__img {
     height: 250px;
   }
-  .list {
+  ul {
     font-size: 15px;
   }
   .motivation .left-col .col-50 {

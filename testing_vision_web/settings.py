@@ -39,9 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main',
     'ckeditor',
     'ckeditor_uploader',
+    'main',
 ]
 
 MIDDLEWARE = [
@@ -196,7 +196,7 @@ CKEDITOR_CONFIGS = {
             'dialog',
             'dialogui',
             'elementspath',
-            'youtube'
+            # 'youtube'
         ]),
     }
 }

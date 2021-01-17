@@ -255,6 +255,10 @@ input {
     margin-bottom: 70px;
   }
 }
+.real-school__right-col {
+  position: relative;
+  z-index: 1;
+}
 
 // block 2 (finance-for-children)
 .finance-for-children {
@@ -262,6 +266,8 @@ input {
   padding-top: 80px;
   border-top: 2px solid @COLOR_PURPLE;
   padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
 
   h2 {
     color: @COLOR_WHITE;
@@ -375,7 +381,6 @@ input {
     }
   }
   .text {
-    margin-bottom: 30px;
     line-height: 1.4;
   }
 }
@@ -387,10 +392,21 @@ input {
   background: @COLOR_LIGHT_BLUE;
   padding: 50px 30px 40px;
 
-  .list {
+  ul {
     list-style: none;
     line-height: 1.4;
-    padding-left: 0;
+    padding-left: 15px;
+
+    li {
+      position: relative;
+
+      &:before {
+        content: '-';
+        position: absolute;
+        left: -15px;
+        font-weight: 700;
+      }
+    }
   }
 }
 .motivation__img {
@@ -603,7 +619,7 @@ input {
   .pluses__img {
     height: 250px;
   }
-  .list {
+  ul {
     font-size: 15px;
   }
   .motivation {
