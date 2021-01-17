@@ -1,9 +1,21 @@
 {% load static %}
+
 <!DOCTYPE html>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Тестовое задание VW</title>
+
+        <link rel="shortcut icon" href="https://static.tildacdn.com/tild3161-3334-4761-b134-373631396432/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="https://static.tildacdn.com/tild3832-3735-4065-b132-326162643031/LOGO.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://static.tildacdn.com/tild3832-3735-4065-b132-326162643031/LOGO.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://static.tildacdn.com/tild3832-3735-4065-b132-326162643031/LOGO.png">
+        <link rel="apple-touch-startup-image" href="https://static.tildacdn.com/tild3832-3735-4065-b132-326162643031/LOGO.png">
+
+        {% comment %}<link href="{% static 'libs/wow/WOW/css/libs/animate.css' %}" rel="stylesheet" type="text/css">{% endcomment %}
+        <link href="{% static 'libs/node_modules/animate.css/animate.css' %}" rel="stylesheet" type="text/css">
         <link href="{% static 'libs/bootstrap/bootstrap-4.1.3/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
         <link href="{% static 'libs/bootstrap/bootstrap-4.1.3/css/bootstrap-grid.css' %}" rel="stylesheet" type="text/css">
         <link href="{% static 'styles/styles.css' %}" rel="stylesheet" type="text/css">
@@ -40,7 +52,7 @@
                         </div>
                         <div class="col-md-3 col-lg-4 flex-end-center">
                             <div class="callback">
-                                <button class="btn btn--light-blue">Личный кабинет</button>
+                                <a class="btn btn--light-blue" href="#">Личный кабинет</a>
                             </div>
                         </div>
                     </div>
@@ -57,8 +69,8 @@
                         <div class="col-md-6 real-school__left-col">
                             <p class="text">Мы создали "Реальную школу", чтобы обезопасить подростков от необдуманных
                                 финансовых поступков и дать успешные перспективы в будущем</p>
-                            <button class="btn btn--purple">Записаться на курс</button>
-                            <button class="btn btn--sand">Попробовать бесплатно</button>
+                            <a class="btn btn--purple" href="#">Записаться на курс</a>
+                            <a class="btn btn--sand" href="#">Попробовать бесплатно</a>
                         </div>
                         <div class="col-md-6 align-self-end real-school__right-col">
                             <img src="{% static 'img/peoples.svg' %}">
@@ -69,13 +81,13 @@
 
             <section class="finance-for-children">
                 <div class="container">
-                    <h2>Интерактивный курс по финансовой грамотности для детей и подростков</h2>
+                    <h2 class="animate__animated animate__fadeInLeft wow">Интерактивный курс по финансовой грамотности для детей и подростков</h2>
                     <div class="row justify-content-md-center">
                         <div class="col-lg-6 col-md-6 col-md finance-for-children__left-col align-self-center">
-                            <img src="{% static 'img/peoples_and_money.svg' %}">
+                            <img src="{% static 'img/peoples_and_money.svg' %}" class="animate__animated animate__zoomIn wow">
                         </div>
                         <div class="col-lg-6 finance-for-children__right-col">
-                            <h3>С первого урока ученики вовлечены в практические упражнения,
+                            <h3 class="animate__animated animate__fadeInRight wow">С первого урока ученики вовлечены в практические упражнения,
                                 которые воспитывают в них</h3>
                             <div class="voice-area voice-area--width-90">
                                 <p class="text">Креативность в поиске нестандартых ходов и решений</p>
@@ -88,17 +100,17 @@
                             </div>
                         </div>
                     </div>
-                    <h3>Задача курса <span class="color--purple">"Простые финансы"</span> – не просто рассказать про
+                    <h3 class="animate__animated animate__fadeInRight wow">Задача курса <span class="color--purple">"Простые финансы"</span> – не просто рассказать про
                         деньги, а увлечь и дать возможность самостоятельно научится управлять деньгами и зарабатывать.</h3>
                 </div>
             </section>
 
             <section class="for-whom">
                 <div class="container">
-                    <h2>Для кого этот курс?</h2>
+                    <h2 class="animate__animated animate__fadeInLeft wow">Для кого этот курс?</h2>
                     <div class="row">
                         <div class="col-lg-9 col-md-10">
-                            <h4>Этот курс идеально подходит для подростков <span class="color--purple fw-7">10 - 14 лет</span>
+                            <h4 class="animate__animated animate__fadeInLeft wow">Этот курс идеально подходит для подростков <span class="color--purple fw-7">10 - 14 лет</span>
                                 независимо от их финансовых навыков.</h4>
                         </div>
                     </div>
@@ -108,7 +120,7 @@
                                 <div class="pluses__img">
                                     <img src="{% static 'img/boys/Kid_1_1.svg' %}">
                                 </div>
-                                <div class="pluses__text text">
+                                <div class="pluses__text text animate__animated animate__slideInLeft wow">
                                     Если они вообще не вникают в денежные дела семьи и не хотят брать на себя
                                     ответственность за личные накопления.
                                 </div>
@@ -119,7 +131,7 @@
                                 <div class="pluses__img">
                                     <img src="{% static 'img/boys/Kid_2.svg' %}">
                                 </div>
-                                <div class="pluses__text text">
+                                <div class="pluses__text text animate__animated animate__slideInLeft wow">
                                     Если они учатся сберегать средства, но ни вы, ни они не знают: а что можно сделать
                                     ещё, кроме как завести копилку?
                                 </div>
@@ -130,7 +142,7 @@
                                 <div class="pluses__img">
                                     <img src="{% static 'img/boys/Kid_3.svg' %}">
                                 </div>
-                                <div class="pluses__text text">
+                                <div class="pluses__text text animate__animated animate__slideInLeft wow">
                                     Если они хотят самостоятельно накопить на крупную покупку – или же это важно вам,
                                     чтобы они научились ценить дорогие вещи.
                                 </div>
@@ -141,7 +153,7 @@
                                 <div class="pluses__img">
                                     <img src="{% static 'img/boys/Kid_4_1.svg' %}">
                                 </div>
-                                <div class="pluses__text text">
+                                <div class="pluses__text text animate__animated animate__slideInLeft wow">
                                     И ещё если они активно интересуются – как и где уже сейчас могут заработать деньги,
                                     во что вложить и как грамотно распоряжаться финансами.
                                 </div>
@@ -153,7 +165,7 @@
 
             <section class="motivation">
                 <div class="left-col">
-                    <div class="motivation__decor-enging">
+                    <div class="motivation__decor-enging animate__animated animate__fadeInLeft wow">
                         <div class="motivation__text">
                             <div class="col-50">
                                 <p class="text">
@@ -172,7 +184,7 @@
                 <div class="right-col">
                     <div class="col-50">
                         <div class="motivation__img">
-                            <img src="{% static 'img/peoples_and_books.svg' %}">
+                            <img class="animate__animated animate__fadeInRight wow" src="{% static 'img/peoples_and_books.svg' %}">
                         </div>
                     </div>
                 </div>
@@ -180,7 +192,7 @@
 
             <section class="about-course">
                 <div class="container">
-                    <h3>Но при этом готовы прислушиваться к мнению авторитетных товарищей: кураторов и сокурскников
+                    <h3 class="animate__animated animate__fadeIn wow">Но при этом готовы прислушиваться к мнению авторитетных товарищей: кураторов и сокурскников
                         в "Чате миллионеров".</h3>
                     <div class="text-center">
                         <button class="btn btn--pink">Занять место на курсе</button>
@@ -190,7 +202,7 @@
 
             <section class="courses-are">
                 <div class="container">
-                    <h2>Курс "Простые финансы" – это</h2>
+                    <h2 class="animate__animated animate__fadeInLeft wow">Курс "Простые финансы" – это</h2>
                 </div>
                 <div class="courses-are__section">
                     <div class="container">
@@ -233,4 +245,8 @@
             {% endcomment %}
         {% endblock %}
     </body>
+    <script src="{% static 'libs/wow/WOW/dist/wow.min.js' %}"></script>
+    <script>
+        new WOW().init();
+    </script>
 </html>

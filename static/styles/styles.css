@@ -110,13 +110,17 @@ h4 {
   width: 315px;
   font-weight: 400;
 }
+.btn:hover,
+.btn:focus {
+  color: inherit;
+}
 .btn--purple {
   background: #4b3584;
   color: #ffffff;
-  /*&:hover, &:focus {
-    background: @COLOR_SAND;
-    color: @COLOR_LIGHT_BLACK;
-  }*/
+}
+.btn--purple:hover,
+.btn--purple:focus {
+  color: #ffffff;
 }
 .btn--sand {
   background: #f7af4d;
@@ -134,12 +138,20 @@ h4 {
     color: @COLOR_WHITE;
   }*/
 }
+.btn--pink:hover,
+.btn--pink:focus {
+  color: #ffffff;
+}
 .btn--light-blue {
   background: #70c2b9;
   color: #ffffff;
   border: none;
   width: auto;
   padding: 7px 35px;
+}
+.btn--light-blue:hover,
+.btn--light-blue:focus {
+  color: #ffffff;
 }
 /*------ header ------*/
 .logo img {
@@ -372,7 +384,7 @@ h4 {
     width: 570px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .motivation .left-col .col-50 {
     width: 425px;
   }
@@ -450,6 +462,12 @@ h4 {
   .list {
     font-size: 15px;
   }
+  .motivation .left-col .col-50 {
+    width: 305px;
+  }
+  .motivation .right-col .col-50 {
+    width: 360px;
+  }
   .motivation__text {
     padding: 30px 30px 20px;
   }
@@ -473,14 +491,6 @@ h4 {
   }
   .timer__text {
     font-size: 20px;
-  }
-}
-@media (min-width: 768px) {
-  .motivation .left-col .col-50 {
-    width: 305px;
-  }
-  .motivation .right-col .col-50 {
-    width: 360px;
   }
 }
 @media (max-width: 767px) {

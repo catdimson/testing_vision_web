@@ -115,15 +115,20 @@ h4 {
   text-align: center;
   width: 315px;
   font-weight: 400;
+
+
+  &:hover, &:focus {
+    color: inherit;
+  }
 }
 .btn--purple {
   background: @COLOR_PURPLE;
   color: @COLOR_WHITE;
 
-  /*&:hover, &:focus {
-    background: @COLOR_SAND;
-    color: @COLOR_LIGHT_BLACK;
-  }*/
+
+  &:hover, &:focus {
+    color: @COLOR_WHITE;
+  }
 }
 .btn--sand {
   background: @COLOR_SAND;
@@ -138,6 +143,9 @@ h4 {
   background: @COLOR_PINK;
   color: @COLOR_WHITE;
 
+  &:hover, &:focus {
+    color: @COLOR_WHITE;
+  }
   /*&:hover, &:focus {
     background: @COLOR_PURPLE;
     color: @COLOR_WHITE;
@@ -149,6 +157,10 @@ h4 {
   border: none;
   width: auto;
   padding: 7px 35px;
+
+  &:hover, &:focus {
+    color: @COLOR_WHITE;
+  }
 }
 
 
@@ -423,7 +435,7 @@ h4 {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .motivation {
     .left-col {
       .col-50 {
@@ -509,6 +521,18 @@ h4 {
   .list {
     font-size: 15px;
   }
+  .motivation {
+    .left-col {
+      .col-50 {
+        width: (@WIDTH_COL_50_MD) - 25px - 30px;
+      }
+    }
+    .right-col {
+      .col-50 {
+        width: (@WIDTH_COL_50_MD);
+      }
+    }
+  }
   .motivation__text {
     padding: 30px 30px 20px;
   }
@@ -532,21 +556,6 @@ h4 {
   }
   .timer__text {
     font-size: 20px;
-  }
-}
-
-@media (min-width: 768px) {
-  .motivation {
-    .left-col {
-      .col-50 {
-        width: (@WIDTH_COL_50_MD) - 25px - 30px;
-      }
-    }
-    .right-col {
-      .col-50 {
-        width: (@WIDTH_COL_50_MD);
-      }
-    }
   }
 }
 
@@ -692,7 +701,3 @@ h4 {
     width: 100%;
   }
 }
-
-
-
-
