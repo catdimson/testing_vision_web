@@ -242,11 +242,13 @@
                         <div class="form-wrapper__section">
                             <form class="form" method="POST" action="send_mail/">
                                 <h2>Ваши данные</h2>
-                                <input type="text" name="first_last_name" id="id-first_last_name" placeholder="Имя Фамилия">
-                                <input type="email" name="email" id="id-email" placeholder="Электронная почта">
-                                <input type="text" name="phone" id="id-phone" placeholder="Введите ваш телефон">
+                                <div class="form__fields">
+                                    <input type="text" name="first_last_name" id="id-first_last_name" placeholder="Имя Фамилия">
+                                    <input type="email" name="email" id="id-email" placeholder="Электронная почта">
+                                    <input type="text" name="phone" id="id-phone" placeholder="Введите ваш телефон">
+                                </div>
                                 <div class="submit-row">
-                                    <input type="submit" class="btn btn--purple">
+                                    <input type="submit" class="btn btn--purple btn--submit" value="Записаться">
                                     <p class="small-text">Оставляя заявку, вы принимаете условия <a href="#">соглашения</a></p>
                                 </div>
                             </form>

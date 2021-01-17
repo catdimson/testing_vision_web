@@ -81,6 +81,17 @@ h4 {
 .p {
   color: @COLOR_LIGHT_BLACK;
 }
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 1.33;
+  padding: 0 20px;
+  border: 1px solid #666;
+  border-radius: 10px;
+  color: @COLOR_BLACK;
+}
 
 .color--purple {
   color: @COLOR_PURPLE;
@@ -162,6 +173,20 @@ h4 {
     color: @COLOR_WHITE;
   }
 }
+.btn--sumbit {
+  text-transform: uppercase;
+}
+.small-text {
+  font-size: 14px;
+  line-height: 1.45;
+  font-family: Arial, sans-serif;
+  color: @COLOR_LIGHT_BLACK;
+
+  a {
+    font-family: Arial, sans-serif;
+  }
+}
+
 
 
 /*------ header ------*/
@@ -417,6 +442,65 @@ h4 {
   margin-right: 25px;
 }
 
+// block 7 (form)
+.form-section {
+  margin: 50px 0;
+}
+.form-wrapper {
+  background: @COLOR_SAND;
+  border-radius: @RADIUS_BIG;
+  border: 3px solid @COLOR_LIGHT_BLACK;
+  padding: 50px 55px;
+  display: flex;
+
+  .form-wrapper__section:first-child {
+    border-right: 1px solid black;
+    padding-right: 55px;
+
+    h2 {
+      width: 300px;
+      margin-bottom: 70px;
+      color: @COLOR_LIGHT_BLACK;
+    }
+  }
+  .form-wrapper__section:last-child {
+    padding-left: 55px;
+
+    h2 {
+      margin-bottom: 30px;
+      color: @COLOR_LIGHT_BLACK;
+    }
+    .form__fields {
+      margin-bottom: 10px;
+    }
+  }
+  ul {
+    font-size: 22px;
+    color: @COLOR_WHITE;
+    font-weight: 500;
+    line-height: 1;
+    padding-left: 20px;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+  .btn--submit {
+    width: 300px;
+  }
+  .small-text {
+    margin-left: 40px;
+  }
+}
+.form-wrapper__section {
+  width: 50%;
+}
+.form-wrapper h2 {
+  font-weight: 700;
+}
+.submit-row {
+  display: flex;
+}
 
 /*------ media ------*/
 
