@@ -221,7 +221,8 @@
                             {{ data.text_block7 | safe }}
                         </div>
                         <div class="form-wrapper__section">
-                            <form id="form" class="form" method="POST" action="send_mail/">
+                            <form id="form" class="form" method="POST" action="">
+                                {% csrf_token %}
                                 <h2>Ваши данные</h2>
                                 <div class="form__fields">
                                     <input type="text" name="first_last_name" id="id-first_last_name" placeholder="Имя Фамилия">

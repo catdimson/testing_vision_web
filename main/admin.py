@@ -1,7 +1,8 @@
+from ckeditor.widgets import CKEditorWidget
 from django import forms
 from django.contrib import admin
+
 from .models import LandingData, Subscribers
-from ckeditor.widgets import CKEditorWidget
 
 
 class LandingDataAdminForm(forms.ModelForm):
@@ -20,5 +21,11 @@ class LandingDataAdminForm(forms.ModelForm):
 class LandingDataAdmin(admin.ModelAdmin):
     form = LandingDataAdminForm
 
+
+class SubscriberAdmin(admin.ModelAdmin):
+    list_display = ('first_last_name', 'email', 'phone')
+    readonly_fields = ('first_last_name', 'email', 'phone')
+
+
 admin.site.register(LandingData, LandingDataAdmin)
-admin.site.register(Subscribers)
+admin.site.register(Subscribers, SubscriberAdmin)

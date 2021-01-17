@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class LandingData(models.Model):
@@ -93,13 +94,13 @@ class LandingData(models.Model):
                                  default="онлайн-квеста в Zoom с кураторами и однокурсниками")
 
     # блок 7
-    h2_block7 = models.CharField(max_length=150, verbose_name="Заголовок h2 в форме", default="Пройдите бесплатный урок")
+    h2_block7 = models.CharField(max_length=150, verbose_name="Заголовок h2 в форме",
+                                 default="Пройдите бесплатный урок")
     text_block7 = models.TextField(max_length=150, verbose_name="Текст в форме")
 
     class Meta:
         verbose_name = "Лэндинг"
         verbose_name_plural = "Данные по лэндингу"
-
 
     def __str__(self):
         return f"Контент лэндинга (вариант {self.id})"
@@ -109,6 +110,9 @@ class Subscribers(models.Model):
     first_last_name = models.CharField(max_length=50, verbose_name="Имя, фамилия")
     email = models.EmailField(verbose_name="Электронная почта")
     phone = models.TextField(max_length=12, verbose_name="Телефон")
+
+    def __str__(self):
+        return self.first_last_name
 
     class Meta:
         verbose_name = "Подписчик"
