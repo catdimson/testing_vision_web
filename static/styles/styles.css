@@ -164,8 +164,11 @@ input {
 .btn--light-blue:focus {
   color: #ffffff;
 }
-.btn--sumbit {
+.btn--submit {
   text-transform: uppercase;
+  border-color: #000000;
+  font-size: 16px;
+  font-weight: 500;
 }
 .small-text {
   font-size: 14px;
@@ -570,6 +573,35 @@ input {
     font-size: 20px;
   }
 }
+@media (max-width: 991px) {
+  .form-wrapper {
+    display: block;
+  }
+  .form-wrapper__section {
+    width: 100%;
+    padding: 0!important;
+    border: none!important;
+  }
+  .form-wrapper .form-wrapper__section:first-child h2 {
+    margin-bottom: 30px;
+    width: auto;
+  }
+  .form-wrapper ul {
+    font-size: 18px;
+  }
+  .form-wrapper .form-wrapper__section:last-child {
+    margin-top: 30px;
+  }
+  .form-wrapper .form-wrapper__section:last-child h2 {
+    margin-bottom: 10px;
+  }
+  .form__fields {
+    padding: 0 10px;
+  }
+  .submit-row {
+    padding: 0 10px;
+  }
+}
 @media (max-width: 767px) {
   .header {
     padding: 30px 0;
@@ -707,5 +739,16 @@ input {
 @media (min-width: 576px) {
   .col-50 {
     width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .form-wrapper {
+    padding: 15px;
+  }
+  .form-wrapper .form-wrapper__section:first-child {
+    padding: 25px 40px 0 40px!important;
+  }
+  .form-wrapper .form-wrapper__section:last-child h2 {
+    padding-left: 40px;
   }
 }
