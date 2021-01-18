@@ -84,13 +84,13 @@ class LandingData(models.Model):
     desc_col1 = models.TextField(verbose_name="Текст под числом колонки 1", max_length=120,
                                  default="недель интенсивных занятий")
     digit_col2 = models.IntegerField(verbose_name="Число 2", default=11)
-    desc_col2 = models.TextField(verbose_name="Текст под числом колонки 1", max_length=120,
+    desc_col2 = models.TextField(verbose_name="Текст под числом колонки 2", max_length=120,
                                  default="уроков с заданиями в форме видеолекций и квестов")
     digit_col3 = models.IntegerField(verbose_name="Число 3", default=20)
-    desc_col3 = models.TextField(verbose_name="Текст под числом колонки 1", max_length=120,
+    desc_col3 = models.TextField(verbose_name="Текст под числом колонки 3", max_length=120,
                                  default="минут среднее время прохождения урока")
     digit_col4 = models.IntegerField(verbose_name="Число 4", default=2)
-    desc_col4 = models.TextField(verbose_name="Текст под числом колонки 1", max_length=120,
+    desc_col4 = models.TextField(verbose_name="Текст под числом колонки 4", max_length=120,
                                  default="онлайн-квеста в Zoom с кураторами и однокурсниками")
 
     # блок 7
