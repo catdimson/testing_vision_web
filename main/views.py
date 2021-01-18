@@ -1,8 +1,11 @@
 from django.shortcuts import render
+from rest_framework.generics import (ListCreateAPIView, RetrieveUpdateDestroyAPIView, )
+from rest_framework.permissions import IsAuthenticated
 
 from .forms import SubscribersForm
-from .models import LandingData, Subscribers
 from .handlers import custom_send_mail
+from .models import LandingData, Subscribers, CustomUser
+from .serializers import CustomUserSerializer
 
 
 def base_view(request):
@@ -25,3 +28,19 @@ def base_view(request):
             custom_send_mail(first_last_name, email, phone)
 
     return render(request, 'base.html', context=context)
+
+
+class CustomUserListCreateView(ListCreateAPIView):
+    queryset = CustomUser.objects.all()
+    serializer_class = CustomUserSerializer
+    permission_classes = [IsAuthenticated]
+
+    def perform_create(self, serializer):
+        user = self.request.user
+        serializer.save(user=user)
+
+
+class CustomUserDetailView(RetrieveUpdateDestroyAPIView):
+    queryset = CustomUser.objects.all()
+    serializer_class = CustomUserSerializer
+    permission_classes = [IsAuthenticated]
